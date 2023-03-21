@@ -9,15 +9,44 @@
   
   <title>Frontend Mentor | Results summary component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
   <main>
-    <div class="total-result-pane"></div>
+    <div class="total-result-pane">
+      <h1>Your Result</h1>
+      <div class="total-result">
+        <p class="total-score">76</p>
+        <p class="total-score-out-of">of 100</p>
+      </div>
+      <p class="result-type">Great</p>
+      <p class="percentage">You scored higher than 65% of the people who have taken these tests.</p>
+    </div>
+    <div class="summary-pane">
+      <div class="summary-pane-content">
+        <h2>Summary</h2>
+        <h3 class="result result-1">
+          <img src="assets/images/icon-reaction.svg" alt="reaction icon">
+          Reaction
+          <p><span>80</span> / 100</p>
+        </h3>
+        <h3 class="result result-2">
+          <img src="assets/images/icon-memory.svg" alt="memory icon">
+          Memory
+          <p><span>92</span> / 100</p>
+        </h3>
+        <h3 class="result result-3">
+          <img src="assets/images/icon-verbal.svg" alt="verbal icon">
+          Verbal
+          <p><span>61</span> / 100</p>
+        </h3>
+        <h3 class="result result-4">
+          <img src="assets/images/icon-visual.svg" alt="visual icon">
+          Visual
+          <p><span>72</span> / 100</p>
+        </h3>
+        <button>Continue</button>
+      </div>
+    </div>
   </main>
 </body>
 </html>

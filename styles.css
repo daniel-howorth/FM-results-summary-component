@@ -1,12 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
 body {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  font-family: 'Outfit', sans-serif;
+}
+
+h1 {
+  font-size: 1.5em;
+  color: hsl(241, 100%, 89%);
+  margin: 1.2em 0 1em;
+}
+
+p {
+  color: hsl(241, 100%, 89%);
 }
 
 main {
+  display: flex;
   height: 400px;
   width: 600px;
   border-radius: 20px;
@@ -14,8 +28,126 @@ main {
 }
 
 .total-result-pane {
-  width: 50%;
-  height: 100%;
+  flex: 1;
+  text-align: center;
   border-radius: 20px;
   background-image: linear-gradient(hsl(252, 100%, 67%) ,hsl(241, 81%, 54%));
+}
+
+.summary-pane {
+  flex: 1;
+}
+
+.summary-pane-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 85%;
+  box-sizing: border-box;
+  margin: 30px 30px 40px;
+}
+
+.summary-pane-content h2 {
+  align-self: flex-start;
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 1.3em;
+}
+
+.summary-pane-content h3 {
+  margin: 0;
+  align-self: stretch;
+  width: auto;
+  height: 2em;
+}
+
+
+.summary-pane-content button {
+  height: 2.5em;
+  background-color: hsl(224, 30%, 27%);
+  border-radius: 50px;
+  border: none;
+  color: hsl(0, 0%, 100%);
+  font-size: 1em;
+  margin-top: 10px;
+}
+
+.total-result {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+
+.total-score {
+  color: hsl(0, 0%, 100%);
+  font-weight: bold;
+  font-size: 3.5em;
+  margin: 0;
+}
+
+.total-score-out-of {
+  margin: 0;
+  font-size: 1em;
+}
+
+.result-type {
+  font-size: 1.5em;
+  color: hsl(221, 100%, 96%);
+  margin-bottom: 0.5em;
+}
+
+.percentage {
+  width: 75%;
+  margin: auto;
+}
+
+.result {
+  width: 75%;
+  border-radius: 10px;
+  padding: 5px 0;
+  font-weight: normal;
+  font-size: 1em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+img {
+  margin: 0 10px;
+}
+
+.result p {
+  margin-left: auto;
+  margin-right: 10px;
+  color: hsl(224, 30%, 27%, 0.5);
+}
+
+.result span {
+  font-weight: bold;
+  color: hsl(224, 30%, 27%);
+}
+
+.result-1 {
+  color: hsl(0, 100%, 67%);
+  background-color: hsl(0, 100%, 67%, 0.1);
+}
+
+.result-2 {
+  color: hsl(39, 100%, 56%);
+  background-color: hsl(39, 100%, 56%, 0.1);
+}
+
+.result-3 {
+  color: hsl(166, 100%, 37%);
+  background-color: hsl(166, 100%, 37%, 0.1);
+}
+
+.result-4{
+  color: hsl(234, 85%, 45%);
+  background-color: hsl(234, 85%, 45%, 0.1);
 }
